@@ -1,7 +1,4 @@
-# Meu Projeto
-
-Este é um projeto incrível que faz uso das seguintes dependências:
-
+Este é um projeto que faz uso das seguintes dependências:
 
 - **@material-ui/data-grid**: Componente de tabela de dados do Material-UI.
 - **@mui/icons-material**: Ícones da biblitoteca de estilização Material-UI.
