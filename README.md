@@ -53,4 +53,16 @@ server.port=5200
 ##### O comando yarn start, na pasta do front-end, irá startar a aplicação.
 ##### O back_end pode ser startado pela IDE
 
-## As bibliotecas usadas estão no readme.md de cada projeto
+### As bibliotecas usadas estão no readme.md de cada projeto
+
+## Algumas imagens de como ficou o projeto
+![image](https://github.com/Italo-Castro/basis/assets/72866245/2096ebd4-e78d-488d-a9b8-c69678ccadbd)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/92080e2b-8239-4ab6-b5b2-96953e33cf14)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/89d3a6a8-0a42-4ae9-9b39-73ae8398ffdb)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/7dfcf740-32c3-4d17-b3ad-57ae44c1219b)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/9bad7695-9c19-4b9e-ba24-8ad494bac40f)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/746fae89-e81f-4140-a45a-27d95f9a7e4d)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/1d8d6d73-cb71-4bcc-bcf9-ae6e66079536)
+![image](https://github.com/Italo-Castro/basis/assets/72866245/2975e72c-d974-4989-8a26-0b564a67b7af)
+
+
