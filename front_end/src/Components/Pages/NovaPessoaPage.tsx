@@ -118,6 +118,27 @@ const NovaPessoaPage: React.FC = () => {
 
   const salvar = async () => {
     try {
+
+      if (tipoPessoa.codigo === 0) {
+        if (!pessoa.nome || pessoa.nome === '') {
+            toast.error('Informe o nome da pessoa');
+            return;
+        }
+      }else if (tipoPessoa.codigo === 1 && !pessoa.razaoSocial || pessoa.razaoSocial === '') {
+        toast.error('Informe a razão social');
+        return;
+      }
+
+      if (!pessoa.ddd) {
+        toast.error('Informe o DD');
+        return;
+      }
+
+      if (!pessoa.telefone) {
+        toast.error('Informe o telefone');
+        return;
+      }
+
       if (pessoa.id) {
         await pessoaApi.update({
           id: pessoa.id,

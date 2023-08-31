@@ -12,6 +12,7 @@ type Props = {
   minRows?: number;
   disabled?: boolean;
   InputProps?: Partial<OutlinedInputProps> | Partial<InputProps> | Partial<FilledInputProps> | undefined
+  maxLength?: number;
 };
 
 const TextFieldGeneric: React.FC<Props> = (props) => {
@@ -25,7 +26,7 @@ const TextFieldGeneric: React.FC<Props> = (props) => {
     fullWidth,
     minRows,
     disabled,
-    InputProps
+    InputProps,maxLength
   } = props;
 
   let newVariant = variant;
@@ -40,6 +41,7 @@ const TextFieldGeneric: React.FC<Props> = (props) => {
       variant={newVariant}
       value={value}
       multiline
+      
       type={type}
       disabled={disabled}
       minRows={minRows ? minRows : 0}
@@ -47,6 +49,11 @@ const TextFieldGeneric: React.FC<Props> = (props) => {
       fullWidth={fullWidth === false ? false : true}
       onChange={(event) => {
         onChange(event.target.value);
+      }}
+      inputProps={{
+        // type: 'number',
+        maxLength,
+        
       }}
       InputProps={InputProps}
     />

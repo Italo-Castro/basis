@@ -90,7 +90,7 @@ const ModalNovoEndereco: React.FC<Props> = (props: Props) => {
             tipoEndereco={tipoEndereco}
             setTipoEndereco={(value) => {
               setTipoEndereco(value);
-              setEndereco({ ...endereco, tipoEndereco: value.codigo });
+              setEndereco({ ...endereco, tipoEndereco: tipoEndereco.codigo });
             }}
           />
         </Grid>
@@ -99,6 +99,7 @@ const ModalNovoEndereco: React.FC<Props> = (props: Props) => {
           <NumberFieldGeneric
             label={"CEP"}
             type="cep"
+            maxLength={10}
             mask="#####-###"
             value={endereco.cep}
             onChange={(value) => {
@@ -165,6 +166,7 @@ const ModalNovoEndereco: React.FC<Props> = (props: Props) => {
         <Grid item xs={2}>
           <TextFieldGeneric
             label={"UF"}
+            maxLength={2}
             value={endereco.uf}
             onChange={(value) => {
               setEndereco({ ...endereco, uf: value });
